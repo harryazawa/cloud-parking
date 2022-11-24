@@ -2,14 +2,18 @@ package com.harry.cloudparking.model;
 
 import lombok.*;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
 import java.time.LocalDateTime;
 
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
 @ToString
+@Entity
 public class Parking {
 
+    @Id
     private @Setter @Getter String id;
     private @Setter @Getter String license;
     private @Setter @Getter String state;
