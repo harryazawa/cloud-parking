@@ -1,7 +1,6 @@
 package com.harry.cloudparking.controller;
 
 import com.harry.cloudparking.controller.dto.ParkingCreateDTO;
-import com.harry.cloudparking.controller.dto.ParkingDTO;
 import io.restassured.RestAssured;
 import org.hamcrest.Matchers;
 import org.junit.jupiter.api.BeforeEach;
@@ -13,7 +12,7 @@ import org.springframework.http.MediaType;
 
 
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
-class ParkingControllerIT {
+class ParkingControllerIT extends AbstractContainerBase {
 
     @LocalServerPort
     private int randomPort;
